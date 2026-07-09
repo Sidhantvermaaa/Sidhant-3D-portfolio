@@ -522,6 +522,31 @@ html{scroll-behavior:smooth;}
       </div>
     </div>
   </div>
+
+  <!-- Card 04 -->
+  <div class="card-container" style="top:calc(96px + 84px);height:auto;">
+    <div class="proj-card" id="card3">
+      <div class="card-top">
+        <div style="display:flex;align-items:center;gap:clamp(12px,2vw,32px)">
+          <span class="card-num">04</span>
+          <div>
+            <p class="card-cat">Service Design · UX & Systems</p>
+            <p class="card-name">VEIN: Emergency Blood Logistics</p>
+          </div>
+        </div>
+        <a href="./vein-case-study.html" style="text-decoration:none"><button class="btn-live">View Case Study</button></a>
+      </div>
+      <div class="card-imgs">
+        <div class="card-col-l">
+          <img src="./images/vein_high_fid_2.png" alt="VEIN Splash Screen">
+          <img src="./images/vein_high_fid_1.png" alt="VEIN Healthcare Selection">
+        </div>
+        <div class="card-col-r">
+          <img src="./images/vein_high_fid_3.png" alt="VEIN SOS Active Dashboard">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <script>
@@ -591,9 +616,9 @@ window.addEventListener('scroll', updateChars, { passive: true });
 updateChars();
 
 // ── Sticky card scale on scroll ─────────────────────────────────────────
-const cards = [document.getElementById('card0'), document.getElementById('card1'), document.getElementById('card2')];
+const cards = [document.getElementById('card0'), document.getElementById('card1'), document.getElementById('card2'), document.getElementById('card3')];
 const projectsSection = document.getElementById('projects');
-const TOTAL = 3;
+const TOTAL = 4;
 
 function updateCards() {
   const secRect = projectsSection.getBoundingClientRect();
